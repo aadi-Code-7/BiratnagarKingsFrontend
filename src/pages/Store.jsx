@@ -5,7 +5,7 @@ import { useCart } from '../cart.jsx';
 import { asset } from '../config.js';
 import CheckoutForm from '../components/CheckoutForm.jsx';
 
-const LOGO = asset('https://biratkings.com/assets/biratnagar-kings-logo-transparent-ByYqYoTH.png');
+const LOGO = '/images/logo/logo.png';
 const LABELS = ['SANDEEP · #25', 'BASIR · #11', 'LOKESH · #07'];
 
 function BuyNowModal({ item, onClose }) {
