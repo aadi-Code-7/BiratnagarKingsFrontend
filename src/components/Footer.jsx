@@ -1,5 +1,4 @@
-import { asset } from '../config.js';
-const LOGO = asset('https://biratkings.com/assets/biratnagar-kings-logo-transparent-ByYqYoTH.png');
+const LOGO = '/images/logo/logo.png';
 export default function Footer() {
   return (
     <footer className="footer">

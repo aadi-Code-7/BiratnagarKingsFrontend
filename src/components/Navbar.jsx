@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useCart } from '../cart.jsx';
-import { asset } from '../config.js';
+// import { asset } from '../config.js';
 
-const LOGO = asset('https://biratkings.com/assets/biratnagar-kings-logo-transparent-ByYqYoTH.png');
+const LOGO = '/images/logo/logo.png';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);

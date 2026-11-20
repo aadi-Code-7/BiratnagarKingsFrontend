@@ -8,7 +8,7 @@ import CheckoutForm from '../components/CheckoutForm.jsx';
 export default function Cart() {
   const { items, dispatch, count } = useCart();
   const { data: products } = useApi('/store/products');
-  const [done, setDone] = useState(null);
+  const [done, setDone] = useState(false);
   const prod = id => products?.find(p => p.id === id);
 
   if (done) return (

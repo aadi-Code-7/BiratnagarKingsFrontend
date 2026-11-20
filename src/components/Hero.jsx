@@ -1,8 +1,8 @@
 import { useApi } from '../api.js';
 import { asset } from '../config.js';
 
-const BG = 'https://biratkings.com/assets/stadium-hero-DCH_u3C3.jpg';
-const SQUAD = 'https://biratkings.com/__l5e/assets-v1/024c8744-2c9e-41dd-a8de-3cd6c7a4548c/class-of-2026.png';
+const BG = '/images/home/stadium-hero.jpg';
+const SQUAD = '/images/home/group.png';
 
 export default function Hero() {
   const { data } = useApi('/franchise');

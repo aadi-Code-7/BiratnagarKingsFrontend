@@ -1,13 +1,13 @@
 import { useLive } from '../api.js';
 import { asset } from '../config.js';
 
-const LOGO = asset('https://biratkings.com/assets/biratnagar-kings-logo-transparent-ByYqYoTH.png');
+const LOGO = '/images/logo/logo.png';
 
 export default function Fixtures() {
   const { data, error } = useLive('/fixtures', 60000);
   return (
     <section id="fixtures" className="section fixtures">
-      <img className="fixtures__ball" src={asset('https://biratkings.com/assets/cricket-ball-BAZ5PK7v.jpg')} alt="" loading="lazy" />
+      <img className="fixtures__ball" src='/images/home/cricket-ball.jpg' alt="" loading="lazy" />
       <p className="eyebrow">Next Roars</p>
       <h2>The Fixtures.</h2>
       {error && <p className="error">Couldn't load fixtures.</p>}
